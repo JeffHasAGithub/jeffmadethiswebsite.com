@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeff's personal website">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css')}}">
+
+    <title>Jeff - {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <main>
+        {% block content %}{% endblock %}
+        <h1>Hi</h1>
+    </main>
+    <footer>
+        <p>Copyright © 2023 Jeffrey Moore</p>
+    </footer>
+</body>
+</html>
