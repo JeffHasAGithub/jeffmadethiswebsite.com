@@ -29,7 +29,28 @@ nav a {
     text-decoration: none;
 }
 
+nav a:not(:first-child) {
+    display: none;
+}
+
+nav.toggle {
+    position: relative;
+}
+
+nav.toggle a {
+    float: none;
+    display: block;
+}
+
+nav.toggle a:last-child {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
 nav a:last-child {
+    display: inline-block;
     float: right;
 }
 
@@ -62,7 +83,14 @@ footer a {
 }
 
 /* large phones, portrait tablets */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    nav a:not(:first-child) {
+        display: inline-block;
+    }
+    nav a:last-child {
+        display: none;
+    }
+}
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
