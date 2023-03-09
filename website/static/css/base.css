@@ -21,12 +21,16 @@ header {
     background-color: lightyellow;
 }
 
-header a {
+nav a {
     display: inline-block;
 
     padding: 1rem;
 
     text-decoration: none;
+}
+
+nav a:last-child {
+    float: right;
 }
 
 main {
