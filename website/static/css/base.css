@@ -17,6 +17,10 @@ body > * {
     margin: auto;
 }
 
+header {
+    background-color: lightyellow;
+}
+
 main {
     background-color: lightblue;
     min-height: 100vh;
