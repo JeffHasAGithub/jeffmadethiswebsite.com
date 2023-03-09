@@ -9,11 +9,22 @@
     {% block styles %}{% endblock %}
 
     <script src="https://kit.fontawesome.com/9efd1a0b98.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/base.js')}}"></script>
     {% block scripts %}{% endblock %}
 
     <title>Jeff - {% block title %}{% endblock %}</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/projects">Projects</a>
+            <a href="/resume">Resume</a>
+            <a href="javascript:void(0);" onclick="toggleNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
     <main>
         {% block content %}
         {% endblock %}
