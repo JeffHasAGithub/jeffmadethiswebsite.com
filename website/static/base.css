@@ -26,6 +26,11 @@ footer {
     background-color: lightcoral;
 }
 
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {}
 
