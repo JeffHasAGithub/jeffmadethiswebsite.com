@@ -13,25 +13,39 @@ body {
     background-color: lightgray;
 }
 
+body > * {
+    margin: auto;
+}
+
 main {
     background-color: lightblue;
+    min-height: 100vh;
 }
 
 footer {
     background-color: lightcoral;
 }
 
-/* Small phones */
-@media only screen and (max-width: 600px) {}
-
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {}
 
 /* landscape tablets */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    body > * {
+        max-width: 90vw;
+    }
+}
 
 /* small laptops/desktops */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    body > * {
+        max-width: 80vw;
+    }
+}
 
 /* large laptops/desktops */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    body > * {
+        max-width: 70vw;
+    }
+}
