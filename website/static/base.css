@@ -8,3 +8,18 @@
 html {
     font-size: 1em;
 }
+
+/* Small phones */
+@media only screen and (max-width: 600px) {}
+
+/* large phones, portrait tablets */
+@media only screen and (min-width: 600px) {}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {}
+
+/* small laptops/desktops */
+@media only screen and (min-width: 992px) {}
+
+/* large laptops/desktops */
+@media only screen and (min-width: 1200px) {}
