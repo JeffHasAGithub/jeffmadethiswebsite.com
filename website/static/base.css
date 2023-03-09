@@ -8,3 +8,63 @@
 html {
     font-size: 1em;
 }
+
+body {
+    background-color: lightgray;
+}
+
+body > * {
+    margin: auto;
+}
+
+main {
+    background-color: lightblue;
+    min-height: 100vh;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+
+    font-size: 1.1rem;
+    text-align: center;
+
+    background-color: lightcoral;
+}
+
+footer div {
+    padding-top: 1.3rem;
+}
+
+footer a {
+    padding: 0 1rem 0 1rem;
+
+    font-size: 2rem;
+    text-decoration: none;
+
+    color: black;
+}
+
+/* large phones, portrait tablets */
+@media only screen and (min-width: 600px) {}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+    body > * {
+        max-width: 90vw;
+    }
+}
+
+/* small laptops/desktops */
+@media only screen and (min-width: 992px) {
+    body > * {
+        max-width: 80vw;
+    }
+}
+
+/* large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+    body > * {
+        max-width: 70vw;
+    }
+}
