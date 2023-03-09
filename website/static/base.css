@@ -32,8 +32,16 @@ footer {
     background-color: lightcoral;
 }
 
+footer div {
+    padding-top: 1.3rem;
+}
+
 footer a {
+    padding: 0 1rem 0 1rem;
+
+    font-size: 2rem;
     text-decoration: none;
+
     color: black;
 }
 
