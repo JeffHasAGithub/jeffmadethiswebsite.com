@@ -1,0 +1,18 @@
+#about {
+    margin: auto;
+    max-width: 50%;
+}
+
+#about h1 {
+    text-align: center;
+}
+
+#about img {
+    display: block;
+    margin: auto;
+
+    max-width: 160px;
+    height: auto;
+
+    border-radius: 50%;
+}
