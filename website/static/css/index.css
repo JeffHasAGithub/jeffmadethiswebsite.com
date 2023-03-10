@@ -48,3 +48,19 @@
 
     border-radius: 1rem;
 }
+
+/* large phones, portrait tablets */
+@media only screen and (min-width: 600px) {
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* small laptops/desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+}
