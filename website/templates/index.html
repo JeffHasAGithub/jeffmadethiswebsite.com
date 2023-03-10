@@ -7,5 +7,29 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Home</h1>
+    <section id="about">
+        <h1>Jeff Moore</h1>
+        <img src="{{ url_for('static', filename='images/default_profile.jpg')}}" />
+        <h3><i class="fa-solid fa-code"></i> Programmer&emsp;<i class="fa-solid fa-briefcase"></i> Salesman</h3>
+        <p>
+            By day, I am a pump applications engineer at DXP Enterprises in Grand
+            Prairie, TX. I work with customers to select and quote a range of
+            centrifugal and positive displacement pumps to meet the needs of their
+            application and budget. In the evening, I enjoy programming in a variety of
+            languages including C, C++, Python, and Javascript.
+        </p>
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>Projects</h2>
+        <button> 
+            <img src="{{ url_for('static', filename='images/placeholder.jpg')}}" />
+        </button>
+        <button>
+            <img src="{{ url_for('static', filename='images/placeholder.jpg')}}" />
+        </button>
+        <button>
+            <img src="{{ url_for('static', filename='images/placeholder.jpg')}}" />
+        </button>
+    </section>
 {% endblock %}

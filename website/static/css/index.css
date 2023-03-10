@@ -1,0 +1,76 @@
+#about {
+    margin: auto;
+    padding: 2rem;
+
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 1rem;
+}
+
+#about img {
+    display: block;
+    margin: auto;
+
+    max-width: 160px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+#about p {
+    text-align: justify;
+}
+
+#projects {
+    padding: 2rem;
+}
+
+#projects h2 {
+    text-align: center;
+}
+
+#projects button {
+    display: inline-block;
+
+    max-width: 25%;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 0px 0px #000000
+}
+
+#projects button:active {
+    box-shadow: 0px 5px 0px 0px #000000 inset;
+    transform: translate(0, 5px);
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 1rem;
+}
+
+/* large phones, portrait tablets */
+@media only screen and (min-width: 600px) {
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+    #about {
+        width: 70%;
+    }
+}
+
+/* small laptops/desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+    #about {
+        width: 50%;
+    }
+}
