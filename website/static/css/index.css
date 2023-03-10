@@ -1,6 +1,6 @@
 #about {
     margin: auto;
-    max-width: 50%;
+    padding: 2rem;
 
     text-align: center;
 }
@@ -21,6 +21,10 @@
 
 #about p {
     text-align: justify;
+}
+
+#projects {
+    padding: 2rem;
 }
 
 #projects h2 {
@@ -55,6 +59,9 @@
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
+    #about {
+        width: 70%;
+    }
 }
 
 /* small laptops/desktops */
@@ -63,4 +70,7 @@
 
 /* large laptops/desktops */
 @media only screen and (min-width: 1200px) {
+    #about {
+        width: 50%;
+    }
 }
