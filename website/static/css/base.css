@@ -29,43 +29,6 @@ body > * {
     margin: auto;
 }
 
-header {
-    background-color: lightyellow;
-}
-
-nav a {
-    display: inline-block;
-
-    padding: 1rem;
-
-    text-decoration: none;
-}
-
-nav a:not(:first-child) {
-    display: none;
-}
-
-nav.toggle {
-    position: relative;
-}
-
-nav.toggle a {
-    float: none;
-    display: block;
-}
-
-nav.toggle a:last-child {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-
-nav a:last-child {
-    display: inline-block;
-    float: right;
-}
-
 main {
     min-height: 100vh;
 
