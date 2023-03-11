@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root {
+    --bg-color:     #2E3440;
+    --fg-color:     #3B4252;
+    --txt-color:    #ECEFF4;
+    --btn-color:    #D8DEE9;
+    --sdw-color:    #263238;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +17,12 @@
 }
 
 html {
+    font-family: 'Lora', serif;
     font-size: 1em;
 }
 
 body {
-    background-color: lightgray;
+    background-color: var(--bg-color);
 }
 
 body > * {
@@ -55,18 +67,23 @@ nav a:last-child {
 }
 
 main {
-    background-color: lightblue;
     min-height: 100vh;
+
+    color: var(--txt-color);
+    background-color: var(--fg-color);
+
+    border-radius: 1rem;
+    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
 }
 
 footer {
     padding-top: 3rem;
     padding-bottom: 4rem;
 
+    color: var(--txt-color);
+
     font-size: 1.1rem;
     text-align: center;
-
-    background-color: lightcoral;
 }
 
 footer div {
@@ -79,7 +96,7 @@ footer a {
     font-size: 2rem;
     text-decoration: none;
 
-    color: black;
+    color: var(--txt-color);
 }
 
 /* large phones, portrait tablets */
