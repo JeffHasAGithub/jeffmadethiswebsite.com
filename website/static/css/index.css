@@ -23,6 +23,36 @@
     text-align: justify;
 }
 
+#resume {
+    margin: auto;
+    padding: 2rem;
+
+    text-align: center;
+}
+
+#resume a {
+    display: block;
+
+    margin: auto;
+    padding: 1rem;
+
+    max-width: 50%;
+
+    color: black;
+    text-decoration: none;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    box-shadow: 0px 5px 0px 0px #000000
+}
+
+#resume a:active {
+    box-shadow: 0px 5px 0px 0px #000000 inset;
+
+    transform: translate(0, 5px);
+}
+
 #projects {
     padding: 2rem;
 }
@@ -62,6 +92,10 @@
     #about {
         width: 70%;
     }
+
+    #resume {
+        width: 70%;
+    }
 }
 
 /* small laptops/desktops */
@@ -72,5 +106,9 @@
 @media only screen and (min-width: 1200px) {
     #about {
         width: 50%;
+    }
+
+    #resume {
+        width: 70%;
     }
 }
