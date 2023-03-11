@@ -23,6 +23,29 @@
     text-align: justify;
 }
 
+#about a {
+    display: block;
+
+    margin: auto;
+    padding: 1rem;
+
+    max-width: 50%;
+
+    color: black;
+    text-decoration: none;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    box-shadow: 0px 5px 0px 0px #000000
+}
+
+#about a:active {
+    box-shadow: 0px 5px 0px 0px #000000 inset;
+
+    transform: translate(0, 5px);
+}
+
 #projects {
     padding: 2rem;
 }
