@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 :root {
     --bg-color:     #2E3440;
     --fg-color:     #3B4252;
+    --txt-color:    #ECEFF4;
     --btn-color:    #D8DEE9;
     --sdw-color:    #263238;
 }
@@ -13,6 +16,7 @@
 }
 
 html {
+    font-family: 'Lora', serif;
     font-size: 1em;
 }
 
@@ -64,7 +68,9 @@ nav a:last-child {
 main {
     min-height: 100vh;
 
+    color: var(--txt-color);
     background-color: var(--fg-color);
+
     box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
 }
 
