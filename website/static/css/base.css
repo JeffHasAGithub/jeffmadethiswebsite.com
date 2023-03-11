@@ -1,3 +1,7 @@
+:root {
+    --bg-color: #2E3440;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +14,7 @@ html {
 }
 
 body {
-    background-color: lightgray;
+    background-color: var(--bg-color);
 }
 
 body > * {
