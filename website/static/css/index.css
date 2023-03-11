@@ -42,14 +42,14 @@
     background-color: var(--btn-color);
     text-decoration: none;
 
-    border: 1px solid black;
+    border: 1px solid var(--sdw-color);
     border-radius: 1rem;
 
-    box-shadow: 0px 5px 0px 0px #000000
+    box-shadow: 0px 5px 0px 0px var(--sdw-color);
 }
 
 #resume a:active {
-    box-shadow: 0px 5px 0px 0px #000000 inset;
+    box-shadow: 0px 5px 0px 0px var(--sdw-color) inset;
 
     transform: translate(0, 5px);
 }
