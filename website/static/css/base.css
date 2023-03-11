@@ -1,5 +1,6 @@
 :root {
     --bg-color: #2E3440;
+    --fg-color: #3B4252;
 }
 
 * {
@@ -59,7 +60,7 @@ nav a:last-child {
 }
 
 main {
-    background-color: lightblue;
+    background-color: var(--fg-color);
     min-height: 100vh;
 }
 
