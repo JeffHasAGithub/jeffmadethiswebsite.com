@@ -27,46 +27,13 @@ body {
 
 body > * {
     margin: auto;
-}
 
-header {
-    background-color: lightyellow;
-}
-
-nav a {
-    display: inline-block;
-
-    padding: 1rem;
-
-    text-decoration: none;
-}
-
-nav a:not(:first-child) {
-    display: none;
-}
-
-nav.toggle {
-    position: relative;
-}
-
-nav.toggle a {
-    float: none;
-    display: block;
-}
-
-nav.toggle a:last-child {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-
-nav a:last-child {
-    display: inline-block;
-    float: right;
+    max-width: 90vw;
 }
 
 main {
+    margin-top: 4rem;
+
     min-height: 100vh;
 
     color: var(--txt-color);
@@ -101,31 +68,28 @@ footer a {
 
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {
-    nav a:not(:first-child) {
-        display: inline-block;
-    }
-    nav a:last-child {
-        display: none;
+    body > * {
+        max-width: 82.5vw;
     }
 }
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
     body > * {
-        max-width: 90vw;
+        max-width: 75vw;
     }
 }
 
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
     body > * {
-        max-width: 80vw;
+        max-width: 67.5vw;
     }
 }
 
 /* large laptops/desktops */
 @media only screen and (min-width: 1200px) {
     body > * {
-        max-width: 70vw;
+        max-width: 60vw;
     }
 }
