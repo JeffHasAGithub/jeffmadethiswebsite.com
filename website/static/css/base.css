@@ -80,10 +80,10 @@ footer {
     padding-top: 3rem;
     padding-bottom: 4rem;
 
+    color: var(--txt-color);
+
     font-size: 1.1rem;
     text-align: center;
-
-    background-color: lightcoral;
 }
 
 footer div {
@@ -96,7 +96,7 @@ footer a {
     font-size: 2rem;
     text-decoration: none;
 
-    color: black;
+    color: var(--txt-color);
 }
 
 /* large phones, portrait tablets */
