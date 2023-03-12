@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template
+from website.db import get_db
 
 
 def create_app(test_config=None):
@@ -21,7 +22,10 @@ def create_app(test_config=None):
 
     @app.route("/")
     def index():
-        return render_template("index.html")
+        db = get_db()
+        projects = db.execute("SELECT * FROM project").fetchall()
+
+        return render_template("index.html", projects=projects)
 
     @app.route("/projects")
     def projects():
