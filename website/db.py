@@ -3,6 +3,11 @@ import sqlite3
 from flask import current_app, g
 
 
+def register_db(app):
+    app.teardown_appcontext(close_db)
+    app.cli.add_command(init_db_cmd)
+
+
 def get_db():
     if 'db' not in g:
         g.db = sqlite3.connect(
