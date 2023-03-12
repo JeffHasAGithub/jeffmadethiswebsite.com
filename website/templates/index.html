@@ -27,7 +27,9 @@
     <hr>
     <section id="projects">
         <img src="{{ url_for('static', filename='images/placeholder.jpg')}}" />
-        <h1><a href={{ projects[0].url }}>{{ projects[0].name }}</a></h1>
-        <p>{{ projects[0].description }}</p>
+        <div>
+            <h1><a href={{ projects[0].url }}>{{ projects[0].name }}</a></h1>
+            <p>{{ projects[0].description }}</p>
+        </div>
     </section>
 {% endblock %}
