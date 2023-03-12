@@ -53,6 +53,8 @@
 
     color: var(--bg-color);
     background-color: var(--btn-color);
+
+    font-size: 1.3rem;
     text-decoration: none;
 
     border: 1px solid var(--sdw-color);
