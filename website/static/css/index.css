@@ -10,12 +10,8 @@
     font-size: calc(2.5rem + 2vw);
 }
 
-#about h2 {
-    font-size: 1rem;
-}
-
 #about h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-bottom: 1rem;
 }
 
@@ -40,6 +36,9 @@
     padding: 2rem;
     padding-bottom: 4rem;
 
+    max-width: 70%;
+
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -49,12 +48,10 @@
     margin: auto;
     padding: 1rem;
 
-    max-width: 50%;
 
     color: var(--bg-color);
     background-color: var(--btn-color);
 
-    font-size: 1.3rem;
     text-decoration: none;
 
     border: 1px solid var(--sdw-color);
@@ -81,11 +78,12 @@ hr {
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
     #about {
-        width: 70%;
+        max-width: 80%;
     }
 
     #resume {
-        width: 70%;
+        max-width: 60%;
+        font-size: 1.2rem;
     }
 }
 
@@ -96,10 +94,11 @@ hr {
 /* large laptops/desktops */
 @media only screen and (min-width: 1200px) {
     #about {
-        width: 50%;
+        max-width: 60%;
     }
 
     #resume {
-        width: 70%;
+        max-width: 50%;
+        font-size: 1.3rem;
     }
 }
