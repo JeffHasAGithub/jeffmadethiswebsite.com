@@ -31,4 +31,7 @@ def create_app(test_config=None):
     def resume():
         return render_template("resume.html")
 
+    from . import db
+    db.register_db(app)
+
     return app
