@@ -4,5 +4,5 @@ CREATE TABLE project (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     url TEXT NOT NULL,
     name TEXT NOT NULL,
-    description TEXT NOT NULL,
+    description TEXT NOT NULL
 );
