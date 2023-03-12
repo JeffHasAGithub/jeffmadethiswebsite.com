@@ -2,7 +2,7 @@ import sqlite3
 from flask import current_app, g
 
 
-def init_db():
+def get_db():
     if 'db' not in g:
         g.db = sqlite3.connect(
             current_app.config["DB"],
