@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+#about h1 {
+    font-family: 'Satisfy', cursive;
+}
+
 #about h2 {
     font-size: 1rem;
 }
