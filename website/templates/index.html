@@ -29,7 +29,12 @@
         <div id="project">
             <img src="{{ url_for('static', filename='images/placeholder.jpg')}}" />
             <div>
-                <h1><a href={{ projects[0].url }}>{{ projects[0].name }}</a></h1>
+                <h1>
+                    {{ projects[0].name }}
+                    <a href={{ projects[0].url }}>
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </h1>
                 <p>{{ projects[0].description }}</p>
             </div>
         </div>
