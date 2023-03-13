@@ -71,6 +71,79 @@ hr {
     max-width: 75%;
 }
 
+#projects {
+    padding: 2rem;
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+}
+
+#project img {
+    display: block;
+
+    margin: auto;
+
+    max-width: 80%;    
+
+    border-radius: 1rem;
+    box-shadow: 0px 2px 2px 0px var(--sdw-color), 0px 3px 1px -2px var(--sdw-color), 0px 1px 5px 0px var(--sdw-color)
+}
+
+#project div {
+    padding: 2rem;
+}
+
+#project h1 {
+    padding-bottom: 1rem;
+
+    text-align: center;
+}
+
+#project a {
+    color: var(--ln-color);
+    text-decoration: none;
+}
+
+#project p {
+    text-align: justify;
+}
+
+#project span {
+    margin: auto;
+}
+
+#project button {
+    margin: auto;
+    padding: 1rem;
+
+    color: var(--bg-color);
+    background-color: var(--btn-color);
+
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    border: 1px solid var(--sdw-color);
+    border-radius: 1rem;
+
+    box-shadow: 0px 5px 0px 0px var(--sdw-color);
+}
+
+#project button:first-child {
+    border-radius: 1rem 0 0 1rem;
+}
+
+#project button:last-child {
+    border-radius: 0 1rem 1rem 0;
+}
+
+#project button:active {
+    box-shadow: 0px 5px 0px 0px var(--sdw-color) inset;
+
+    transform: translate(0, 5px);
+}
+
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {
 }
@@ -89,6 +162,13 @@ hr {
 
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
+    #project {
+        flex-direction: row;
+    }
+
+    #project img {
+        max-width: 40%;
+    }
 }
 
 /* large laptops/desktops */
