@@ -11,8 +11,7 @@
 }
 
 #about h3 {
-    font-size: 1.1rem;
-    padding-bottom: 1rem;
+    font-size: 1.1rem; padding-bottom: 1rem;
 }
 
 #about img {
@@ -75,46 +74,47 @@ hr {
     padding: 2rem;
 }
 
-#project {
+#projects {
     display: flex;
     flex-direction: column;
 }
 
-#project img {
+#projects img {
     display: block;
 
     margin: auto;
-
     max-width: 80%;    
+
+    background-color: #0A3660;
 
     border-radius: 1rem;
     box-shadow: 0px 2px 2px 0px var(--sdw-color), 0px 3px 1px -2px var(--sdw-color), 0px 1px 5px 0px var(--sdw-color)
 }
 
-#project div {
+#projects div {
     padding: 2rem;
 }
 
-#project h1 {
+#projects h1 {
     padding-bottom: 1rem;
 
     text-align: center;
 }
 
-#project a {
+#projects a {
     color: var(--ln-color);
     text-decoration: none;
 }
 
-#project p {
+#projects p {
     text-align: justify;
 }
 
-#project span {
+#projects span {
     margin: auto;
 }
 
-#project button {
+#projects button {
     margin: auto;
     padding: 1rem;
 
@@ -130,15 +130,15 @@ hr {
     box-shadow: 0px 5px 0px 0px var(--sdw-color);
 }
 
-#project button:first-child {
+#projects button:first-child {
     border-radius: 1rem 0 0 1rem;
 }
 
-#project button:last-child {
+#projects button:last-child {
     border-radius: 0 1rem 1rem 0;
 }
 
-#project button:active {
+#projects button:active {
     box-shadow: 0px 5px 0px 0px var(--sdw-color) inset;
 
     transform: translate(0, 5px);
