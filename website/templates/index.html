@@ -30,21 +30,23 @@
     </section>
     <hr>
     <section id="projects">
-        <div id="project">
-            <img src="{{ url_for('static', filename='images/placeholder.jpg')}}" />
+        {% for project in projects %}
+        <div id="project-{{ loop.index0 }}">
+            <img src={{ projects[loop.index0].image }} />
             <div>
                 <h1>
-                    {{ projects[0].name }}
-                    <a href={{ projects[0].url }}>
+                    {{ projects[loop.index0].name }}
+                    <a href={{ projects[loop.index0].url }}>
                         <i class="fa-solid fa-link"></i>
                     </a>
                 </h1>
-                <p>{{ projects[0].description }}</p>
+                <p>{{ projects[loop.index0].description }}</p>
             </div>
-            <span>
-                <button><</button>
-                <button>></button
-            </span>
         </div>
+        {% endfor %}
+        <span>
+            <button><</button>
+            <button>></button
+        </span>
     </section>
 {% endblock %}
