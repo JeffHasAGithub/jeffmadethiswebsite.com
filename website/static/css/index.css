@@ -93,6 +93,7 @@ hr {
 
 #projects div {
     padding: 2rem;
+    display: none;
 }
 
 #projects h1 {
