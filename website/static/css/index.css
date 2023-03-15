@@ -72,9 +72,6 @@ hr {
 
 #projects {
     padding: 2rem;
-}
-
-#projects {
     display: flex;
     flex-direction: column;
 }
@@ -93,7 +90,6 @@ hr {
 
 #projects div {
     padding: 2rem;
-    display: none;
 }
 
 #projects h1 {
@@ -143,6 +139,14 @@ hr {
     box-shadow: 0px 5px 0px 0px var(--sdw-color) inset;
 
     transform: translate(0, 5px);
+}
+
+.project {
+    display: none;
+}
+
+.active {
+    display: block;
 }
 
 /* large phones, portrait tablets */
