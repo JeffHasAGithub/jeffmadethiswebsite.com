@@ -30,6 +30,10 @@
     </section>
     <hr>
     <section id="projects">
+        <span>
+            <button id="pbtn"><</button>
+            <button id="nbtn">></button>
+        </span>
         {% for project in projects %}
         <div id="project-{{ loop.index0 }}" class="project">
             <img src={{ projects[loop.index0].image }} />
@@ -44,9 +48,5 @@
             </div>
         </div>
         {% endfor %}
-        <span>
-            <button id="pbtn"><</button>
-            <button id="nbtn">></button
-        </span>
     </section>
 {% endblock %}
