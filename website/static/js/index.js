@@ -15,4 +15,13 @@ dom.pbtn.addEventListener("click", _ => {
         pi = dom.projects.length - 1;
 
     dom.projects[pi].classList.add("active");
-})
+});
+
+dom.nbtn.addEventListener("click", _ => {
+    dom.projects[pi].classList.remove("active");
+
+    if (++pi == dom.projects.length)
+        pi = 0;
+
+    dom.projects[pi].classList.add("active");
+});
