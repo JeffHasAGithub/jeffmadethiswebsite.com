@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
 {% endblock %}
 
+{% block scripts %}
+    <script defer src="{{ url_for('static', filename='js/index.js')}}"></script>
+{% endblock %}
+
 {% block content %}
     <section id="about">
         <h1>Jeff Moore</h1>
@@ -26,5 +30,23 @@
     </section>
     <hr>
     <section id="projects">
+        <span>
+            <button id="pbtn"><</button>
+            <button id="nbtn">></button>
+        </span>
+        {% for project in projects %}
+        <div id="project-{{ loop.index0 }}" class="project">
+            <img src={{ projects[loop.index0].image }} />
+            <div>
+                <h1>
+                    {{ projects[loop.index0].name }}
+                    <a href={{ projects[loop.index0].url }}>
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </h1>
+                <p>{{ projects[loop.index0].description }}</p>
+            </div>
+        </div>
+        {% endfor %}
     </section>
 {% endblock %}
