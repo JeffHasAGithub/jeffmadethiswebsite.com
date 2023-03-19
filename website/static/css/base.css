@@ -29,6 +29,7 @@ body {
 
 header {
     color: white;
+    font-size: 2rem;
 }
 
 header div {
@@ -45,8 +46,6 @@ nav {
     width: 0vw;
 
     overflow-x: hidden;
-
-    font-size: 2rem;
 
     background-color: var(--nav-color);
 
