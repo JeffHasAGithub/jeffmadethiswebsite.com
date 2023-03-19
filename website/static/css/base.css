@@ -8,6 +8,7 @@
     --txt-color:    #ECEFF4;
     --btn-color:    #D8DEE9;
     --sdw-color:    #263238;
+    --nav-color:    #4C566A;
 }
 
 * {
@@ -28,8 +29,41 @@ body {
 
 header {
     color: white;
+}
 
+header div {
     cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 1rem;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+
+    font-size: 2rem;
+
+    background-color: var(--nav-color);
+}
+
+nav div {
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    color: var(--txt-color);
+    text-decoration: none;
 }
 
 main {
