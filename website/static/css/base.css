@@ -65,28 +65,28 @@ footer a {
 
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {
-    body > * {
+    main {
         max-width: 82.5vw;
     }
 }
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
-    body > * {
+    main {
         max-width: 75vw;
     }
 }
 
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
-    body > * {
+    main {
         max-width: 67.5vw;
     }
 }
 
 /* large laptops/desktops */
 @media only screen and (min-width: 1200px) {
-    body > * {
+    main {
         max-width: 60vw;
     }
 }
