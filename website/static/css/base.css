@@ -26,6 +26,10 @@ body {
     background-color: var(--bg-color);
 }
 
+header {
+    color: white;
+}
+
 main {
     margin: auto;
     margin-top: 4rem;
