@@ -37,6 +37,7 @@ header div {
 
 nav {
     position: fixed;
+
     top: 0;
     left: 0;
 
@@ -48,6 +49,8 @@ nav {
     font-size: 2rem;
 
     background-color: var(--nav-color);
+
+    transition: 0.3s;
 }
 
 nav div {
