@@ -26,15 +26,11 @@ body {
     background-color: var(--bg-color);
 }
 
-body > * {
-    margin: auto;
-
-    max-width: 90vw;
-}
-
 main {
+    margin: auto;
     margin-top: 4rem;
 
+    max-width: 90vw;
     min-height: 100vh;
 
     color: var(--txt-color);
