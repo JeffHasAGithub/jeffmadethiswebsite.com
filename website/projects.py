@@ -12,10 +12,10 @@ def projects():
 @bp.route("/<int:id>")
 def project(id):
     db = get_db()
-    project = db.execute("SELECT * FROM project"
-                         " WHERE project.id = ?").fetchone()
+    project = db.execute("SELECT * FROM project WHERE project.id = ?",
+                         (id,)).fetchone()
 
     if project is None:
         abort(404, f"Project {id} does not exist")
 
-    return render_template("project.html")
+    return render_template("projects/project.html")
