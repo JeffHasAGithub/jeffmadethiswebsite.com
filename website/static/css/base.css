@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+@import "include/header.css";
+@import "include/footer.css";
+
 :root {
     --bg-color:     #2E3440;
     --fg-color:     #3B4252;
@@ -27,45 +30,6 @@ body {
     background-color: var(--bg-color);
 }
 
-header {
-    color: white;
-    font-size: 2rem;
-}
-
-header div {
-    cursor: pointer;
-}
-
-nav {
-    position: fixed;
-
-    top: 0;
-    left: 0;
-
-    height: 100vh;
-    width: 0vw;
-
-    overflow-x: hidden;
-
-    background-color: var(--nav-color);
-
-    transition: 0.3s;
-}
-
-nav div {
-    font-family: 'Lato', sans-serif;
-    text-align: right;
-}
-
-nav li {
-    text-align: center;
-}
-
-nav a {
-    color: var(--txt-color);
-    text-decoration: none;
-}
-
 main {
     margin: auto;
     margin-top: 4rem;
@@ -78,29 +42,6 @@ main {
 
     border-radius: 1rem;
     box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
-}
-
-footer {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-
-    color: var(--txt-color);
-
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-footer div {
-    padding-top: 1.3rem;
-}
-
-footer a {
-    padding: 0 1rem 0 1rem;
-
-    font-size: 2rem;
-    text-decoration: none;
-
-    color: var(--txt-color);
 }
 
 /* large phones, portrait tablets */

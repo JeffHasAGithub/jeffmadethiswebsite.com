@@ -1,0 +1,38 @@
+header {
+    color: var(--txt-color);
+    font-size: 2rem;
+}
+
+header div {
+    cursor: pointer;
+}
+
+header nav {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 0vw;
+
+    overflow-x: hidden;
+
+    background-color: var(--nav-color);
+
+    transition: 0.3s;
+}
+
+header nav div {
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+}
+
+header nav li {
+    text-align: center;
+}
+
+header nav a {
+    color: var(--txt-color);
+    text-decoration: none;
+}
