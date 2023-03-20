@@ -38,4 +38,7 @@ def create_app(test_config=None):
     from . import db
     db.register_db(app)
 
+    from . import projects
+    app.register_blueprint(projects.bp)
+
     return app
