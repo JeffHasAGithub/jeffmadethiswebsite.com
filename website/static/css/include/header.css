@@ -7,7 +7,7 @@ header div {
     cursor: pointer;
 }
 
-nav {
+header nav {
     position: fixed;
 
     top: 0;
@@ -23,16 +23,16 @@ nav {
     transition: 0.3s;
 }
 
-nav div {
+header nav div {
     font-family: 'Lato', sans-serif;
     text-align: right;
 }
 
-nav li {
+header nav li {
     text-align: center;
 }
 
-nav a {
+header nav a {
     color: var(--txt-color);
     text-decoration: none;
 }
