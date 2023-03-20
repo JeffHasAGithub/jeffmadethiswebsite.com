@@ -65,11 +65,6 @@
     transform: translate(0, 5px);
 }
 
-hr {
-    margin: auto;
-    max-width: 75%;
-}
-
 #projects {
     display: flex;
 
@@ -151,6 +146,11 @@ hr {
 
 .active {
     display: block;
+}
+
+hr {
+    margin: auto;
+    max-width: 75%;
 }
 
 /* large phones, portrait tablets */
