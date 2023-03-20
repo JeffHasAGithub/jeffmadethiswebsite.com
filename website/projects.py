@@ -6,14 +6,14 @@ bp = Blueprint("projects", __name__, url_prefix="/projects")
 
 @bp.route("/")
 def projects():
-    return render_template("projects.html")
+    return render_template("projects/index.html")
 
 
 @bp.route("/<int:id>")
 def project(id):
     db = get_db()
     project = db.execute("SELECT * FROM project"
-                         "WHERE project.id = ?").fetchone()
+                         " WHERE project.id = ?").fetchone()
 
     if project is None:
         abort(404, f"Project {id} does not exist")
