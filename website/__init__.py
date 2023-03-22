@@ -1,4 +1,3 @@
-import os
 import werkzeug
 from flask import Flask, render_template
 
@@ -17,6 +16,8 @@ def create_app(test_config=None):
 
 
 def setup_config(app, test_config):
+    import os
+
     app.config.from_mapping(
         KEY="dev",
         DB=os.path.join(app.instance_path, "website.sqlite"),
