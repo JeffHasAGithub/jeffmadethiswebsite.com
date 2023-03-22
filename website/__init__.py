@@ -1,5 +1,7 @@
 import os
+import werkzeug
 from flask import Flask, render_template
+
 from website.db import get_db
 
 
@@ -27,15 +29,16 @@ def create_app(test_config=None):
 
         return render_template("index.html", projects=projects)
 
+    @app.errorhandler(werkzeug.exceptions.HTTPException)
+    def error(err):
+        return render_template("error.html", err=err), err.code
+
     @app.route("/resume")
     def resume():
         return render_template("resume.html")
 
     from . import db
     db.register_db(app)
-
-    from . import errors
-    app.register_blueprint(errors.bp)
 
     from . import projects
     app.register_blueprint(projects.bp)
