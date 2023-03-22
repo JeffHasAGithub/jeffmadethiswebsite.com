@@ -22,6 +22,18 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    setup_routes(app)
+
+    from . import db
+    db.register_db(app)
+
+    from . import projects
+    app.register_blueprint(projects.bp)
+
+    return app
+
+
+def setup_routes(app):
     @app.errorhandler(werkzeug.exceptions.HTTPException)
     def error(err):
         return render_template("error.html", err=err), err.code
@@ -36,11 +48,3 @@ def create_app(test_config=None):
     @app.route("/resume")
     def resume():
         return render_template("resume.html")
-
-    from . import db
-    db.register_db(app)
-
-    from . import projects
-    app.register_blueprint(projects.bp)
-
-    return app
