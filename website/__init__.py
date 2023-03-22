@@ -7,6 +7,21 @@ from website.db import get_db
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
+
+    setup_config(app, test_config)
+
+    setup_routes(app)
+
+    from . import db
+    db.register_db(app)
+
+    from . import projects
+    app.register_blueprint(projects.bp)
+
+    return app
+
+
+def setup_config(app, test_config):
     app.config.from_mapping(
         KEY="dev",
         DB=os.path.join(app.instance_path, "website.sqlite"),
@@ -21,16 +36,6 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
-    setup_routes(app)
-
-    from . import db
-    db.register_db(app)
-
-    from . import projects
-    app.register_blueprint(projects.bp)
-
-    return app
 
 
 def setup_routes(app):
