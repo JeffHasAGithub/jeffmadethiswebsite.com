@@ -22,16 +22,16 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    @app.errorhandler(werkzeug.exceptions.HTTPException)
+    def error(err):
+        return render_template("error.html", err=err), err.code
+
     @app.route("/")
     def index():
         db = get_db()
         projects = db.execute("SELECT * FROM project").fetchall()
 
         return render_template("index.html", projects=projects)
-
-    @app.errorhandler(werkzeug.exceptions.HTTPException)
-    def error(err):
-        return render_template("error.html", err=err), err.code
 
     @app.route("/resume")
     def resume():
