@@ -1,11 +1,10 @@
+import flask
 import werkzeug
-from flask import Flask, render_template
-
-from website.db import get_db
+import website
 
 
 def create_app(test_config=None):
-    app = Flask(__name__, instance_relative_config=True)
+    app = flask.Flask(__name__, instance_relative_config=True)
 
     setup_config(app, test_config)
     setup_routes(app)
@@ -37,18 +36,18 @@ def setup_config(app, test_config):
 def setup_routes(app):
     @app.errorhandler(werkzeug.exceptions.HTTPException)
     def error(err):
-        return render_template("error.html", err=err), err.code
+        return flask.render_template("error.html", err=err), err.code
 
     @app.route("/")
     def index():
-        db = get_db()
+        db = website.db.get_db()
         projects = db.execute("SELECT * FROM project").fetchall()
 
-        return render_template("index.html", projects=projects)
+        return flask.render_template("index.html", projects=projects)
 
     @app.route("/resume")
     def resume():
-        return render_template("resume.html")
+        return flask.render_template("resume.html")
 
 
 def setup_database(app):
