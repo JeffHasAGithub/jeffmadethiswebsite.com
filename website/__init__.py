@@ -1,5 +1,7 @@
 import os
+import werkzeug
 from flask import Flask, render_template
+
 from website.db import get_db
 
 
@@ -20,6 +22,10 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    @app.errorhandler(werkzeug.exceptions.HTTPException)
+    def error(err):
+        return render_template("error.html", err=err), err.code
+
     @app.route("/")
     def index():
         db = get_db()
@@ -33,9 +39,6 @@ def create_app(test_config=None):
 
     from . import db
     db.register_db(app)
-
-    from . import errors
-    app.register_blueprint(errors.bp)
 
     from . import projects
     app.register_blueprint(projects.bp)
