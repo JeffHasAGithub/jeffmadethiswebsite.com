@@ -11,9 +11,7 @@ def create_app(test_config=None):
     setup_config(app, test_config)
     setup_routes(app)
     setup_database(app)
-
-    from . import projects
-    app.register_blueprint(projects.bp)
+    setup_blueprints(app)
 
     return app
 
@@ -55,3 +53,8 @@ def setup_routes(app):
 def setup_database(app):
     from . import db
     db.register_db(app)
+
+
+def setup_blueprints(app):
+    from . import projects
+    app.register_blueprint(projects.bp)
