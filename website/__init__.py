@@ -9,11 +9,8 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
 
     setup_config(app, test_config)
-
     setup_routes(app)
-
-    from . import db
-    db.register_db(app)
+    setup_database(app)
 
     from . import projects
     app.register_blueprint(projects.bp)
@@ -53,3 +50,8 @@ def setup_routes(app):
     @app.route("/resume")
     def resume():
         return render_template("resume.html")
+
+
+def setup_database(app):
+    from . import db
+    db.register_db(app)
