@@ -10,12 +10,14 @@
     <section id="project">
         <h1>{{ project.name }}</h1>
         <img src={{ url_for('static', filename='images/placeholder.jpg') }} />
-        <div>
+        <div id="links">
             <a href="{{ project.host_url }}">
                 <i class="fa-solid fa-link"></i>
+                Visit
             </a>
             <a href="{{ project.source_url }}">
                 <i class="fa-solid fa-code"></i>
+                Code
             </a>
         </div>
     </section>
