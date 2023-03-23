@@ -2,6 +2,11 @@
     padding: 1rem;
 }
 
+#project a {
+    color: var(--ln-color);
+    text-decoration: none;
+}
+
 #project h1 {
     margin: 1rem;
     text-align: center;
