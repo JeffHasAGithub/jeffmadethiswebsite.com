@@ -18,4 +18,4 @@ def project(id):
     if project is None:
         flask.abort(404, f"Project {id} does not exist")
 
-    return flask.render_template("projects/project.html")
+    return flask.render_template("projects/project.html", project=project)

@@ -1,0 +1,41 @@
+#project {
+    padding: 1rem;
+}
+
+#project a {
+    color: var(--ln-color);
+    text-decoration: none;
+}
+
+#project a:hover {
+    text-decoration: underline; 
+}
+
+#project h1 {
+    margin: 1rem;
+    text-align: center;
+}
+
+#project img {
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 5px;
+}
+
+#project #links {
+    display: flex;
+    margin: 1rem;
+
+    text-align: center;
+}
+
+#project #links a {
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+#project #description p {
+    margin: 1rem 0;
+    text-align: justify;
+}

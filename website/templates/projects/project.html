@@ -3,9 +3,28 @@
 {% block title %}Projects{% endblock %}
 
 {% block styles %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects/project.css')}}">
 {% endblock %}
 
 {% block content %}
-    <h1>Project</h1>
+    <section id="project">
+        <a href="/projects"><i class="fa-solid fa-arrow-left"></i> Projects</a>
+        <h1>{{ project.name }}</h1>
+        <img src={{ url_for('static', filename='images/placeholder.jpg') }} />
+        <div id="links">
+            <a href="{{ project.host_url }}">
+                <i class="fa-solid fa-link"></i>
+                Visit
+            </a>
+            <a href="{{ project.source_url }}">
+                <i class="fa-solid fa-code"></i>
+                Code
+            </a>
+        </div>
+        <div id="description">
+            <p>{{ project.short_desc }}</p>
+            <hr>
+            <p>{{ project.extend_desc }}</p>
+        </div>
+    </section>
 {% endblock %}
