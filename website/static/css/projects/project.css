@@ -2,9 +2,16 @@
     padding: 1rem;
 }
 
+#project h1 {
+    margin: 1rem;
+    text-align: center;
+}
+
 #project img {
     max-width: 100%;
     height: auto;
+
+    border-radius: 5px;
 }
 
 #project #links {
