@@ -8,5 +8,12 @@
 
 {% block content %}
     <section id="projects">
+        {% for project in projects %}
+            <div id="project-{{ project.id }}">
+                <h1>{{ project.name }}</h1>
+                <img src={{ url_for('static', filename='images/placeholder.jpg') }} />
+                <p>{{ project.short_desc }}</p>
+            </div>
+        {% endfor %}
     </section>
 {% endblock %}
