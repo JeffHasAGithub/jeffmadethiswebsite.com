@@ -21,3 +21,8 @@
     font-size: 1.2rem;
     text-decoration: none;
 }
+
+#project #description p {
+    margin: 1rem 0;
+    text-align: justify;
+}
