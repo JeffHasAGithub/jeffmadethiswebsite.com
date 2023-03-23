@@ -6,3 +6,18 @@
     max-width: 100%;
     height: auto;
 }
+
+#project #links {
+    display: flex;
+    margin: 1rem;
+
+    text-align: center;
+}
+
+#project #links a {
+    margin: auto;
+
+    color: var(--ln-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
