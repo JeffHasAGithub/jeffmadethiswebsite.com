@@ -6,7 +6,13 @@ bp = flask.Blueprint("projects", __name__, url_prefix="/projects")
 
 @bp.route("/")
 def projects():
-    return flask.render_template("projects/index.html")
+    db = website.db.get_db()
+    projects = db.execute("SELECT * FROM project").fetchall()
+
+    if projects is None:
+        flask.abort(404, "Could not find projects")
+
+    return flask.render_template("projects/index.html", projects=projects)
 
 
 @bp.route("/<int:id>")
