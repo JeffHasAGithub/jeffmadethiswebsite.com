@@ -6,3 +6,7 @@
     padding: 1rem;
 }
 
+#projects div img {
+    max-width: 100%;
+    height: auto;
+}
