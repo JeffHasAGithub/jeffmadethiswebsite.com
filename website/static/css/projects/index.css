@@ -19,7 +19,30 @@
 }
 
 #projects #grid button {
-    margin: 1rem 0;
+    padding: 1rem;
+
+    color: var(--bg-color);
+    background-color: var(--btn-color);
+
+    cursor: pointer;
+    text-decoration: none;
+
+    border: 1px solid var(--sdw-color);
+    border-radius: 1rem;
+
+    box-shadow: 0px 5px 0px 0px var(--sdw-color);
+}
+
+#projects #grid button:hover {
+    box-shadow: 0px 7px 0px 0px var(--sdw-color);
+    
+    transform: translate(0, -2px);
+}
+
+#projects #grid button:active {
+    box-shadow: 0px 5px 0px 0px var(--sdw-color) inset;
+
+    transform: translate(0, 5px);
 }
 
 #projects #grid button *:first-child {
@@ -36,4 +59,8 @@
     height: auto;
 
     border-radius: 5px;
+}
+
+#projects #grid button p {
+    text-align: justify;
 }
