@@ -12,11 +12,11 @@
         <hr>
         <div id="grid">
         {% for project in projects %}
-            <div id="project-{{ project.id }}">
+            <button id="project-{{ project.id }}">
                 <h2>{{ project.name }}</h2>
                 <img src={{ url_for('static', filename='images/placeholder.jpg') }} />
                 <p>{{ project.short_desc }}</p>
-            </div>
+            </button>
         {% endfor %}
         </div>
     </section>

@@ -18,20 +18,20 @@
     gap: 1rem;
 }
 
-#projects #grid div {
+#projects #grid button {
     margin: 1rem 0;
 }
 
-#projects #grid div *:first-child {
+#projects #grid button *:first-child {
     margin-bottom: 1rem;
     text-align: center;
 }
 
-#projects #grid div *:last-child {
+#projects #grid button *:last-child {
     margin-top: 1rem;
 }
 
-#projects #grid img {
+#projects #grid button img {
     max-width: 100%;
     height: auto;
 
