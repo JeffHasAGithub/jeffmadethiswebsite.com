@@ -8,15 +8,32 @@
     text-align: center;
 }
 
+#projects hr {
+    margin: 1rem 0;
+}
+
 #projects #grid {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 1rem;
+}
 
+#projects #grid div {
     margin: 1rem 0;
+}
+
+#projects #grid div *:first-child {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#projects #grid div *:last-child {
+    margin-top: 1rem;
 }
 
 #projects #grid img {
     max-width: 100%;
     height: auto;
+
+    border-radius: 5px;
 }
