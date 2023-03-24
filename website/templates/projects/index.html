@@ -8,6 +8,7 @@
 
 {% block content %}
     <section id="projects">
+        <div id="grid">
         {% for project in projects %}
             <div id="project-{{ project.id }}">
                 <h1>{{ project.name }}</h1>
@@ -15,5 +16,6 @@
                 <p>{{ project.short_desc }}</p>
             </div>
         {% endfor %}
+        </div>
     </section>
 {% endblock %}
