@@ -13,6 +13,7 @@
     grid-template-columns: repeat(2, 2fr);
     gap: 1rem;
 
+    margin: 1rem 0;
 }
 
 #projects #grid img {
