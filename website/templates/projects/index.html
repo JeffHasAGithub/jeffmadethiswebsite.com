@@ -8,10 +8,11 @@
 
 {% block content %}
     <section id="projects">
+        <h1>Projects</h1>
         <div id="grid">
         {% for project in projects %}
             <div id="project-{{ project.id }}">
-                <h1>{{ project.name }}</h1>
+                <h2>{{ project.name }}</h2>
                 <img src={{ url_for('static', filename='images/placeholder.jpg') }} />
                 <p>{{ project.short_desc }}</p>
             </div>

@@ -1,12 +1,21 @@
 #projects {
+    padding: 1rem;
+}
+
+#projects h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: calc(2.5rem + 2vw);
+    text-align: center;
+}
+
+#projects #grid {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 1rem;
 
-    padding: 1rem;
 }
 
-#projects div img {
+#projects #grid img {
     max-width: 100%;
     height: auto;
 }
