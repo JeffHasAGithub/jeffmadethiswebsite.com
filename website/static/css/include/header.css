@@ -1,0 +1,17 @@
+#header {
+    height: 100%;
+
+    color: var(--txt-color);
+    font-size: 2rem;
+
+    background-color: var(--nav-color);
+}
+
+#header nav li {
+    text-align: center;
+}
+
+#header nav a {
+    color: var(--txt-color);
+    text-decoration: none;
+}
