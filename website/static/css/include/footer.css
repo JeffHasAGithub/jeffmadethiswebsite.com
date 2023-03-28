@@ -1,4 +1,4 @@
-footer {
+#footer {
     padding-top: 3rem;
     padding-bottom: 4rem;
 
@@ -8,11 +8,11 @@ footer {
     text-align: center;
 }
 
-footer div {
+#footer div {
     padding-top: 1.3rem;
 }
 
-footer a {
+#footer a {
     padding: 0 1rem 0 1rem;
 
     font-size: 2rem;
