@@ -11,42 +11,4 @@
 {% endblock %}
 
 {% block content %}
-    <section id="about">
-        <h1>Jeff Moore</h1>
-        <img src="{{ url_for('static', filename='images/default_profile.jpg')}}" />
-        <h3><i class="fa-solid fa-code"></i> Programmer&emsp;<i class="fa-solid fa-briefcase"></i> Salesman</h3>
-        <p>
-            By day, I am a Pump Applications Engineer at DXP Enterprises in Grand
-            Prairie, TX. I work with customers to select and price a range of
-            centrifugal and positive displacement pumps to meet the needs of their
-            application and budget. In the evening, I enjoy programming in a variety of
-            languages including C, C++, Python, and Javascript.
-        </p>
-    </section>
-    <section id="resume">
-        <a href="{{ url_for('static', filename='resume.pdf')}}" download="jeff_moore_resume">
-            <i class="fa-solid fa-file-pdf"></i>&emsp;Resume
-        </a>
-    </section>
-    <hr>
-    <section id="projects">
-        <span>
-            <button id="pbtn"><</button>
-            <button id="nbtn">></button>
-        </span>
-        {% for project in projects %}
-        <div id="project-{{ loop.index0 }}" class="project">
-            <img src={{ projects[loop.index0].image }} />
-            <div>
-                <h1>
-                    {{ projects[loop.index0].name }}
-                    <a href={{ projects[loop.index0].url }}>
-                        <i class="fa-solid fa-link"></i>
-                    </a>
-                </h1>
-                <p>{{ projects[loop.index0].description }}</p>
-            </div>
-        </div>
-        {% endfor %}
-    </section>
 {% endblock %}

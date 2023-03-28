@@ -16,29 +16,14 @@
 </head>
 <body>
     <header>
-        <div id="open-nav"><i class="fa-regular fa-bars"></i></div>
-        <nav id="sidenav">
-            <div id="close-nav">x</div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/projects">Projects</a></li>
-            </ul>
-        </nav>
+        {% include "include/header.html" %}
     </header>
     <main>
         {% block content %}
         {% endblock %}
     </main>
     <footer>
-        <p>Copyright © 2023 Jeffrey Moore</p>
-        <div>
-            <a href="https://github.com/jeffhasagithub">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:jeffmooreweb@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
+        {% include "include/footer.html" %}
     </footer>
 </body>
 </html>
