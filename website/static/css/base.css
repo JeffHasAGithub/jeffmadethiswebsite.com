@@ -29,14 +29,15 @@ html {
 body {
     display: grid;
     grid-template-areas:
-        "head main main"
-        "head main main"
-        "head foot foot";
+        "main main main"
+        "main main main"
+        "foot foot foot";
     
     background-color: var(--bg-color);
 }
 
 header {
+    display: none;
     grid-area: head;
 }
 
@@ -76,6 +77,18 @@ footer {
 
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "head main main"
+            "head main main"
+            "head foot foot";
+    }
+
+    header {
+        display: block;
+    }
+
     main {
         max-width: 67.5vw;
     }
