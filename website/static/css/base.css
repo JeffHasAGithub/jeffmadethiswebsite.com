@@ -30,6 +30,10 @@ body {
     background-color: var(--bg-color);
 }
 
+header {
+    display: none;
+}
+
 main {
     margin: auto;
     margin-top: 4rem;
