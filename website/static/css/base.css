@@ -35,16 +35,11 @@ header {
 }
 
 main {
-    margin: auto;
-
     min-height: 100vh;
 }
 
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {
-    main {
-        max-width: 82.5vw;
-    }
 }
 
 /* landscape tablets */
