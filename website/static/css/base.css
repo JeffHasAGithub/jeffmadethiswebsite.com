@@ -38,6 +38,22 @@ main {
     min-height: 100vh;
 }
 
+main button {
+    float: right;
+    padding: 1rem;
+
+    color: var(--txt-color);
+    font-size: 2rem;
+
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+main button:hover {
+    color: var(--ln-color);
+}
+
 /* large phones, portrait tablets */
 @media only screen and (min-width: 600px) {
 }
@@ -56,6 +72,10 @@ main {
 
     main {
         margin-left: 30vw;
+    }
+
+    main button {
+        display: none;
     }
 
     footer {
