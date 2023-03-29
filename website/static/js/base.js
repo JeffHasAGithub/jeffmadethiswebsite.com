@@ -1,11 +1,12 @@
-const sidenav = document.getElementById("sidenav");
-const navopen = document.getElementById("open-nav");
-const navclose = document.getElementById("close-nav");
+const header = document.querySelector("header");
+const main = document.querySelector("main");
 
-navopen.addEventListener("click", _ => {
-    sidenav.style.width = "100vw";
-});
+const headToggle = header.querySelector("button");
+const mainToggle = main.querySelector("button");
 
-navclose.addEventListener("click", _ => {
-    sidenav.style.width = "0vw";
+headToggle.addEventListener("click", (_) => {
+    header.style.width = 0;
+})
+mainToggle.addEventListener("click", (_) => {
+    header.style.width = "100vw";
 });
