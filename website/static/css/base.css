@@ -43,9 +43,16 @@ main {
     min-height: 100vh;
 }
 
-main button {
-    float: right;
+main div:first-child {
+    display: inline-block;
+
+    width: 100%;
     padding: 1rem;
+
+    text-align: right;
+}
+
+main button {
 
     color: var(--txt-color);
     font-size: 2rem;
