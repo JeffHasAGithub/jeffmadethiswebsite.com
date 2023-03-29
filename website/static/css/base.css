@@ -36,16 +36,8 @@ header {
 
 main {
     margin: auto;
-    margin-top: 4rem;
 
-    max-width: 90vw;
     min-height: 100vh;
-
-    color: var(--txt-color);
-    background-color: var(--fg-color);
-
-    border-radius: 1rem;
-    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
 }
 
 /* large phones, portrait tablets */
