@@ -57,6 +57,10 @@ main {
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
+    header {
+        display: block;
+    }
+
     main {
         max-width: 75vw;
     }
