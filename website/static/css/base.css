@@ -59,6 +59,11 @@ main {
 @media only screen and (min-width: 768px) {
     header {
         display: block;
+
+        position: fixed;
+        top: 0;
+
+        height: 100vh;
     }
 
     main {
