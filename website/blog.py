@@ -17,4 +17,11 @@ def blog():
 
 @bp.route("/<int:id>")
 def post():
-    pass
+    db = website.db.get_db()
+    post = db.execute("SELECT * FROM blog WHERE blog.id = ?",
+                      (id,)).fetchone()
+
+    if post is None:
+        flask.abort(404, f"post {id} does not exist")
+
+    return flask.render_template("blog/post.html")
