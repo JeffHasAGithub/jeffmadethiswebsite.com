@@ -1,0 +1,11 @@
+#blog {
+    color: var(--txt-color);
+}
+
+#blog article {
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+
+    width: 90%;
+    background-color: var(--fg-color);
+}
