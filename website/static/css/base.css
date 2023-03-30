@@ -53,7 +53,6 @@ main div:first-child {
 }
 
 main button {
-
     color: var(--txt-color);
     font-size: 2rem;
 
