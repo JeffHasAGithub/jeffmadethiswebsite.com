@@ -13,7 +13,12 @@
                 <h1>{{ post.title }}</h1>
                 <p>{{ post.created }}</p>
                 <hr>
-                <p>{{ post.body }}</p>
+                <p>
+                    {{ post.body[:1000] }}
+                    {% if post.body|length > 1000 %}
+                        ...
+                    {% endif %}
+                </p>
             </article>
         {% endfor %}
 {% endblock %}
