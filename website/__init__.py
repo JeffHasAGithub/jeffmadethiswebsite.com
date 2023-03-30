@@ -58,3 +58,6 @@ def setup_database(app):
 def setup_blueprints(app):
     from . import projects
     app.register_blueprint(projects.bp)
+
+    from . import blog
+    app.register_blueprint(blog.bp)
