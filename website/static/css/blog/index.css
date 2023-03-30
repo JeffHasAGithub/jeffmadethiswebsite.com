@@ -9,3 +9,32 @@
     width: 90%;
     background-color: var(--fg-color);
 }
+
+#blog article * {
+    margin-block: 1rem;
+}
+
+#blog article hr {
+    margin: auto;
+    max-width: 90%;
+}
+
+#blog article span {
+    display: inline-block;
+
+    margin: 0;
+    width: 100%;
+
+    text-align:right;
+}
+
+#blog article span a {
+    padding: 2px;
+
+    color: var(--ln-color);
+    text-decoration: none;
+}
+
+#blog article span a:hover {
+    border-bottom: 1px solid var(--ln-color);
+}

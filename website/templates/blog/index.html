@@ -19,10 +19,12 @@
                         ...
                     {% endif %}
                 </p>
-                <a href="/blog/{{ post.id }}">
-                    Continue reading&emsp;
-                    <i class="fa fa-arrow-right"></i>
-                </a>
+                <span>
+                    <a href="/blog/{{ post.id }}">
+                        Continue reading&nbsp;
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </span>
             </article>
         {% endfor %}
 {% endblock %}
