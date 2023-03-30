@@ -7,7 +7,7 @@ bp = flask.Blueprint("blog", __name__, url_prefix="/blog")
 @bp.route("/")
 def blog():
     db = website.db.get_db()
-    blog = db.execute("SELECT * FROM blog").fetchall()
+    blog = db.execute("SELECT * FROM post").fetchall()
 
     if blog is None:
         flask.abort(404, "could not find blog")
@@ -16,9 +16,9 @@ def blog():
 
 
 @bp.route("/<int:id>")
-def post():
+def post(id):
     db = website.db.get_db()
-    post = db.execute("SELECT * FROM blog WHERE blog.id = ?",
+    post = db.execute("SELECT * FROM post WHERE post.id = ?",
                       (id,)).fetchone()
 
     if post is None:
