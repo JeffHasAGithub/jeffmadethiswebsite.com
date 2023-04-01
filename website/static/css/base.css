@@ -71,6 +71,10 @@ main button:hover {
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
+}
+
+/* small laptops/desktops */
+@media only screen and (min-width: 992px) {
     header {
         width: 30vw;
     }
@@ -86,10 +90,6 @@ main button:hover {
     footer {
         margin-left: 30vw; 
     }
-}
-
-/* small laptops/desktops */
-@media only screen and (min-width: 992px) {
 }
 
 /* large laptops/desktops */
