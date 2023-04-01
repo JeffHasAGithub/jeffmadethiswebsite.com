@@ -33,7 +33,7 @@ def setup_config(app, test_config):
         pass
 
 
-def setup_routes(app):
+def setup_errorhandlers(app):
     @app.errorhandler(werkzeug.exceptions.HTTPException)
     def error(err):
         return flask.render_template("error.html", err=err), err.code
