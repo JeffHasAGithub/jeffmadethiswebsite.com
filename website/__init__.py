@@ -1,6 +1,5 @@
 import flask
 import werkzeug
-import website
 
 
 def create_app(test_config=None):
