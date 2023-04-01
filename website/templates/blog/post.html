@@ -8,5 +8,11 @@
 
 {% block content %}
     <section id="post">
+        <article>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.created }}</p>
+            <hr>
+            <p>{{ post.body }}</p>
+        </article>
     </section>
 {% endblock %}
