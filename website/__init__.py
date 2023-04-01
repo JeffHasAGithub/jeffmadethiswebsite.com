@@ -38,10 +38,6 @@ def setup_routes(app):
     def error(err):
         return flask.render_template("error.html", err=err), err.code
 
-    @app.route("/resume")
-    def resume():
-        return flask.render_template("resume.html")
-
 
 def setup_database(app):
     from . import db
