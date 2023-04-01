@@ -5,11 +5,11 @@ bp = flask.Blueprint("blog", __name__)
 
 
 @bp.route("/")
-def blog():
+def index():
     db = website.db.get_db()
     posts = db.execute("SELECT * FROM post").fetchall()
 
-    if blog is None:
+    if posts is None:
         flask.abort(404, "could not find blog")
 
     return flask.render_template("blog/index.html", posts=posts)
