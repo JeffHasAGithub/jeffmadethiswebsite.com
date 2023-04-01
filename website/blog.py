@@ -24,4 +24,4 @@ def post(id):
     if post is None:
         flask.abort(404, f"post {id} does not exist")
 
-    return flask.render_template("blog/post.html")
+    return flask.render_template("blog/post.html", post=post)
