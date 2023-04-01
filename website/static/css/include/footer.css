@@ -13,14 +13,19 @@
 }
 
 #footer a {
+    display: inline-block;
+
     padding: 0 1rem 0 1rem;
 
+    color: var(--txt-color);
     font-size: 2rem;
     text-decoration: none;
-
-    color: var(--txt-color);
 }
 
 #footer a:hover {
     color: var(--ln-color);
+}
+
+#footer a:active {
+    transform: scale(.9);
 }
