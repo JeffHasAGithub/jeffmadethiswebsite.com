@@ -21,3 +21,6 @@
     color: var(--txt-color);
 }
 
+#footer a:hover {
+    color: var(--ln-color);
+}
