@@ -38,13 +38,6 @@ def setup_routes(app):
     def error(err):
         return flask.render_template("error.html", err=err), err.code
 
-    @app.route("/")
-    def index():
-        db = website.db.get_db()
-        projects = db.execute("SELECT * FROM project").fetchall()
-
-        return flask.render_template("index.html", projects=projects)
-
     @app.route("/resume")
     def resume():
         return flask.render_template("resume.html")
@@ -61,3 +54,4 @@ def setup_blueprints(app):
 
     from . import blog
     app.register_blueprint(blog.bp)
+    app.add_url_rule("/", endpoint="index")

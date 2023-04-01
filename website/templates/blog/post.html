@@ -7,5 +7,16 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Post</h1>
+    <section id="post">
+        <a href="/">
+            <i class="fa-solid fa-arrow-left"></i>
+            &nbsp;Blog
+        </a>
+        <article>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.created.strftime('%B %d, %Y') }}</p>
+            <hr>
+            <p>{{ post.body }}</p>
+        </article>
+    </section>
 {% endblock %}

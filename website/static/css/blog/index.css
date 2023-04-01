@@ -1,0 +1,41 @@
+#blog {
+    color: var(--txt-color);
+}
+
+#blog article {
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+
+    width: 90%;
+    background-color: var(--fg-color);
+    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
+}
+
+#blog article * {
+    margin-block: 1rem;
+}
+
+#blog article hr {
+    margin: auto;
+    max-width: 90%;
+}
+
+#blog article span {
+    display: inline-block;
+
+    margin: 0;
+    width: 100%;
+
+    text-align: right;
+}
+
+#blog article span a {
+    padding: 2px;
+
+    color: var(--ln-color);
+    text-decoration: none;
+}
+
+#blog article span a:hover {
+    border-bottom: 1px solid var(--ln-color);
+}

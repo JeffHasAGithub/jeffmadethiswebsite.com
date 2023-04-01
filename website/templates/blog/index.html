@@ -7,5 +7,24 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Blog</h1>
+    <section id="blog">
+        {% for post in posts %}
+            <article id="post-{{ post.id }}">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.created.strftime('%B %d, %Y') }}</p>
+                <hr>
+                <p>
+                    {{ post.body[:1000] }}
+                    {% if post.body|length > 1000 %}
+                        ...
+                    {% endif %}
+                </p>
+                <span>
+                    <a href="/blog/{{ post.id }}">
+                        Continue reading&nbsp;
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </span>
+            </article>
+        {% endfor %}
 {% endblock %}

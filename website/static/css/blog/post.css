@@ -1,0 +1,29 @@
+#post {
+    color: var(--txt-color);
+
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+
+    width: 90%;
+
+    background-color: var(--fg-color);
+    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
+}
+
+#post article * {
+    margin-block: 1rem;
+}
+
+#post a {
+    color: var(--ln-color);
+    text-decoration: none;
+}
+
+#post a:hover {
+    text-decoration: underline;
+}
+
+#post article hr {
+    margin: auto;
+    max-width: 90%;
+}
