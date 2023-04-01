@@ -6,7 +6,6 @@
     color: var(--txt-color);
     font-size: 2rem;
 
-    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
     background-color: var(--nav-color);
 
     overflow-y: scroll;
