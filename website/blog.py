@@ -15,7 +15,7 @@ def index():
     return flask.render_template("blog/index.html", posts=posts)
 
 
-@bp.route("/<int:id>")
+@bp.route("/post/<int:id>")
 def post(id):
     db = website.db.get_db()
     post = db.execute("SELECT * FROM post WHERE post.id = ?",
