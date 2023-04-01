@@ -10,7 +10,7 @@
     <section id="post">
         <article>
             <h1>{{ post.title }}</h1>
-            <p>{{ post.created }}</p>
+            <p>{{ post.created.strftime('%B %d, %Y') }}</p>
             <hr>
             <p>{{ post.body }}</p>
         </article>
