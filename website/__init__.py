@@ -1,15 +1,14 @@
 import flask
 import werkzeug
-import website
 
 
 def create_app(test_config=None):
     app = flask.Flask(__name__, instance_relative_config=True)
 
     setup_config(app, test_config)
-    setup_routes(app)
     setup_database(app)
     setup_blueprints(app)
+    setup_errorhandlers(app)
 
     return app
 
@@ -33,14 +32,10 @@ def setup_config(app, test_config):
         pass
 
 
-def setup_routes(app):
+def setup_errorhandlers(app):
     @app.errorhandler(werkzeug.exceptions.HTTPException)
     def error(err):
         return flask.render_template("error.html", err=err), err.code
-
-    @app.route("/resume")
-    def resume():
-        return flask.render_template("resume.html")
 
 
 def setup_database(app):
