@@ -12,6 +12,7 @@
 #header #toggle {
     display: inline-block;
 
+    padding: 1rem;
     width: 100%;
 
     text-align: right;
@@ -28,6 +29,10 @@
 
 #header #toggle button:hover {
     color: var(--ln-color);
+}
+
+#header #toggle button:active {
+    transform: scale(.9);
 }
 
 #header #about h1 {
