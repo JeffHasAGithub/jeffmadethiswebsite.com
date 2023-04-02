@@ -59,9 +59,10 @@ main button {
     color: var(--txt-color);
     font-size: 2rem;
 
+    cursor: pointer;
+
     border: none;
     background: transparent;
-    cursor: pointer;
 }
 
 main button:hover {
@@ -79,11 +80,11 @@ main button:hover {
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
     header {
-        width: 30vw;
+        width: 25vw;
     }
 
     main {
-        margin-left: 30vw;
+        margin-left: 25vw;
     }
 
     main button {
@@ -91,7 +92,7 @@ main button:hover {
     }
 
     footer {
-        margin-left: 30vw; 
+        margin-left: 25vw; 
     }
 }
 
