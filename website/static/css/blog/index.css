@@ -39,3 +39,22 @@
 #blog article span a:hover {
     border-bottom: 1px solid var(--ln-color);
 }
+
+/* large phones, portrait tablets */
+@media only screen and (min-width: 600px) {
+}
+
+/* landscape tablets */
+@media only screen and (min-width: 768px) {
+}
+
+/* small laptops/desktops */
+@media only screen and (min-width: 992px) {
+    #blog article {
+        width: 70%;
+    }
+}
+
+/* large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+}
