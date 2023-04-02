@@ -73,8 +73,12 @@ main div:first-child button {
     background: transparent;
 }
 
-main button:hover {
+main div:first-child button:hover {
     color: var(--ln-color);
+}
+
+main div:first-child button:active {
+    transform: scale(.9);
 }
 
 /* large phones, portrait tablets */
