@@ -1,8 +1,6 @@
 #header {
     height: 100%;
 
-    padding: 1rem;
-
     color: var(--txt-color);
     font-size: 2rem;
 
@@ -97,18 +95,34 @@
     max-width: 90%;
 }
 
-#header nav ul {
-    list-style-type: none;
-}
-
-#header nav li {
-    margin: 1rem;
-    text-align: center;
+#header nav {
+    margin-block: 1rem;
 }
 
 #header nav a {
+    display: block;
+    position: relative;
+
+    padding: 1rem;
+
     color: var(--txt-color);
     text-decoration: none;
+}
+
+#header nav a:hover::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: .8rem;
+    height: 100%;
+    background-color: var(--ln-color);
+}
+
+#header nav a:hover {
+    background-color: var(--hvr-color);
 }
 
 /* large phones, portrait tablets */
