@@ -55,7 +55,15 @@ main div:first-child {
     text-align: right;
 }
 
-main button {
+main div:first-child span {
+    float: left;
+
+    color: var(--txt-color);
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+}
+
+main div:first-child button {
     color: var(--txt-color);
     font-size: 2rem;
 
@@ -87,7 +95,11 @@ main button:hover {
         margin-left: 25vw;
     }
 
-    main button {
+    main div:first-child span {
+        display: none;
+    }
+
+    main div:first-child button {
         display: none;
     }
 
