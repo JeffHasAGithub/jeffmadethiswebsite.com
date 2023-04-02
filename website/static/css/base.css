@@ -10,8 +10,9 @@
     --ln-color:     #A3BE8C;
     --txt-color:    #ECEFF4;
     --btn-color:    #D8DEE9;
+    --hvr-color:    #4C566A;
     --sdw-color:    #263238;
-    --nav-color:    #4C566A;
+    --nav-color:    #434C5E;
 }
 * {
     margin: 0;
@@ -33,8 +34,10 @@ header {
     position: fixed;
     top: 0;
 
-    height: 100vh;
+    height: 100%;
     width: 0;
+
+    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
 
     overflow-x: hidden;
 }
@@ -52,17 +55,30 @@ main div:first-child {
     text-align: right;
 }
 
-main button {
+main div:first-child span {
+    float: left;
+
+    color: var(--txt-color);
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+}
+
+main div:first-child button {
     color: var(--txt-color);
     font-size: 2rem;
 
+    cursor: pointer;
+
     border: none;
     background: transparent;
-    cursor: pointer;
 }
 
-main button:hover {
+main div:first-child button:hover {
     color: var(--ln-color);
+}
+
+main div:first-child button:active {
+    transform: scale(.9);
 }
 
 /* large phones, portrait tablets */
@@ -71,25 +87,29 @@ main button:hover {
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
-    header {
-        width: 30vw;
-    }
-
-    main {
-        margin-left: 30vw;
-    }
-
-    main button {
-        display: none;
-    }
-
-    footer {
-        margin-left: 30vw; 
-    }
 }
 
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
+    header {
+        width: 25vw;
+    }
+
+    main {
+        margin-left: 25vw;
+    }
+
+    main div:first-child span {
+        display: none;
+    }
+
+    main div:first-child button {
+        display: none;
+    }
+
+    footer {
+        margin-left: 25vw; 
+    }
 }
 
 /* large laptops/desktops */

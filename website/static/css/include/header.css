@@ -1,18 +1,18 @@
 #header {
     height: 100%;
 
-    padding: 1rem;
-
     color: var(--txt-color);
     font-size: 2rem;
 
     background-color: var(--nav-color);
-    box-shadow: 0px 2px 5px 0px var(--sdw-color), 0px 1px 10px 0px var(--sdw-color), 0px 2px 4px -1px var(--sdw-color);
+
+    overflow-y: scroll;
 }
 
 #header #toggle {
     display: inline-block;
 
+    padding: 1rem;
     width: 100%;
 
     text-align: right;
@@ -29,6 +29,10 @@
 
 #header #toggle button:hover {
     color: var(--ln-color);
+}
+
+#header #toggle button:active {
+    transform: scale(.9);
 }
 
 #header #about h1 {
@@ -70,16 +74,13 @@
     margin: auto;
     padding: 1rem;
 
-
     color: var(--bg-color);
-    background-color: var(--btn-color);
-
     text-decoration: none;
 
     border: 1px solid var(--sdw-color);
     border-radius: 1rem;
-
     box-shadow: 0px 5px 0px 0px var(--sdw-color);
+    background-color: var(--btn-color);
 }
 
 #header #resume a:hover {
@@ -99,18 +100,34 @@
     max-width: 90%;
 }
 
-#header nav ul {
-    list-style-type: none;
-}
-
-#header nav li {
-    margin: 1rem;
-    text-align: center;
+#header nav {
+    margin-block: 1rem;
 }
 
 #header nav a {
+    display: block;
+    position: relative;
+
+    padding: 1rem;
+
     color: var(--txt-color);
     text-decoration: none;
+}
+
+#header nav a:hover::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: .8rem;
+    height: 100%;
+    background-color: var(--ln-color);
+}
+
+#header nav a:hover {
+    background-color: var(--hvr-color);
 }
 
 /* large phones, portrait tablets */
@@ -119,13 +136,13 @@
 
 /* landscape tablets */
 @media only screen and (min-width: 768px) {
-    #header #toggle button {
-        display: none;
-    }
 }
 
 /* small laptops/desktops */
 @media only screen and (min-width: 992px) {
+    #header #toggle button {
+        display: none;
+    }
 }
 
 /* large laptops/desktops */
